@@ -9,8 +9,15 @@ export async function POST(request) {
   return NextResponse.json({ message: "Topic Created" }, { status: 201 });
 }
 
-export async function Get() {
+export async function GET() {
   await connectMongoDB();
   const tasks = await Task.find();
   return NextResponse.json({ tasks });
+}
+
+export async function DELETE(request) {
+  const id = request.nextUrl.searchParams.get("id");
+  await connectMongoDB();
+  await Task.findByIdAndDelete(id);
+  return NextResponse.json({ message: "task deleted" }, { status: 200 });
 }
