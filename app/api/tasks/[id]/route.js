@@ -9,3 +9,10 @@ export async function PUT(request, { params }) {
   await Task.findByIdAndUpdate(id, { title, description });
   return NextResponse.json({ message: "task updated" }, { status: 200 });
 }
+
+export async function GET(request, { params }) {
+  const { id } = params;
+  await connectMongoDB();
+  const task = await Task.findOne({ _id: id });
+  return NextResponse.json({ task }, { status: 200 });
+}
