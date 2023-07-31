@@ -31,7 +31,7 @@ async function TaskList() {
             <div className=" font-semibold">{task.description}</div>
           </div>
           <div className="flex justify-between items-center">
-            <RemoveBtn />
+            <RemoveBtn id={task._id} />
             <Link href={`/editTask/${task._id}`}>
               <HiPencilAlt size={24} />
             </Link>
