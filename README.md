@@ -4,3 +4,17 @@
 </p>
 
 ## This is a simple Todo App built using ReactNext.js and styled using Tailwind css.
+
+You can view a live demo of the project here: 
+
+
+## 😃 Features:
+
+- ➕ Add todos
+- 🗑️ Delete todos
+- 🖊️ Edit todos
+- 🌙 Light \ dark mode 
+
+<p align="center">
+  ❤️ Feel free to create issues and contributions for features or bugs to this project.
+</p>
