@@ -33,6 +33,7 @@ function AddTask() {
       console.log(error);
     }
   };
+
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <input
@@ -50,13 +51,14 @@ function AddTask() {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-
-      <button
-        type="submit"
-        className=" bg-green-600 font-bold text-white py-3 px-6 w-fit "
-      >
-        Add Task
-      </button>
+      <div className="flex gap-8 justify-center">
+        <button
+          type="submit"
+          className="  bg-green-600 font-bold text-white py-3 px-6 w-56 "
+        >
+          Add Task
+        </button>
+      </div>
     </form>
   );
 }
