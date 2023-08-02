@@ -37,7 +37,7 @@ function AddTask() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <input
-        className=" w-full border border-slate-500 px-8 py-2"
+        className="w-full border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Task Title"
         value={title}
@@ -45,7 +45,7 @@ function AddTask() {
       />
 
       <input
-        className=" w-full border border-slate-500 px-8 py-2"
+        className="w-full border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Task description"
         value={description}
@@ -54,7 +54,7 @@ function AddTask() {
       <div className="flex gap-8 justify-center">
         <button
           type="submit"
-          className="  bg-green-600 font-bold text-white py-3 px-6 w-56 "
+          className="bg-green-600 font-bold text-white py-3 px-6 w-56"
         >
           Add Task
         </button>

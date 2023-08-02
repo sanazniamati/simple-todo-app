@@ -24,7 +24,7 @@ async function TaskList() {
       {tasks.map((task) => (
         <div
           key={task.id}
-          className=" border-2 border-solid border-black p-8 mb-4 flex justify-between"
+          className=" border-2 border-solid border-black p-8 mb-4 flex justify-between dark:border-white dark:bg-white "
         >
           <div>
             <h1 className=" font-extrabold text-2xl">{task.title}</h1>
