@@ -7,10 +7,10 @@ function AddTask() {
     <div>
       <Link
         href={"/addTask"}
-        className="btn btn-primary font-bold text-white w-full"
+        className="flex border-2 p-2 rounded-lg border-blue-600 bg-blue-600 font-bold text-white w-full"
       >
-        ADD New Task
-        <AiOutlinePlus className="ml-2" size={18} />
+        <div> ADD New Task</div>
+        <AiOutlinePlus className="ml-2 font-extrabold" size={18} />
       </Link>
     </div>
   );
