@@ -7,7 +7,7 @@
 
 # picture Demo
 
-![Demo](./img.png)
+![Demo](/img.png)
 
 ## 😃 Features:
 
